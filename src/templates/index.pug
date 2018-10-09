@@ -1,0 +1,255 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.home
+		.header
+			.container
+				nav.navbar.navbar-expand-lg
+					a.navbar-brand(href="#") 
+						img(src="./img/logofs.png", alt="Logo")
+					//- nút hiển thị trong mobile
+					button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
+						span.fa.fa-bars
+					#fullStackMenu.collapse.navbar-collapse
+						//- Thuộc tính '.mr-auto' sẽ đẩy me nu về bên phải 
+						.mr-auto
+						ul.navbar-nav
+							li.nav-item
+								a.nav-link(href="") ABOUT US
+									
+							li.nav-item.active
+								a.nav-link(href="") ALL PRODUCTS
+							li.nav-item
+								a.nav-link(href="") BEST SELLER
+							li.nav-item
+								a.nav-link(href="") EVENT
+							li.nav-item
+								a.nav-link(href="") PHOTO REVIEW
+							li.nav-item
+								a.nav-link(href="") CONTACT
+		.banner1
+			.owl-carousel.owl-theme
+				.item
+					img.img-fluid(src="./img/home-banner-1.png", alt="")
+				.item
+					img.img-fluid(src="./img/home-banner-1.png", alt="")
+				.item
+					img.img-fluid(src="./img/home-banner-1.png", alt="")
+				.item
+					img.img-fluid(src="./img/home-banner-1.png", alt="")
+		.container.box1
+			.row
+				.col.md-8.item
+					figure
+						img.img-fluid(src="./img/home-banner-2.png", alt="")
+				.col-md-4.item
+					figure
+						img(src="./img/pro-1.png", alt="")
+						figcaption
+							h5 Ice Cream - Maple Brown
+							p 360.000VNĐ
+			.row.pro2
+				.col-md-4.item
+					figure
+						img.img-fluid(src="./img/pro-2.png", alt="")
+						figcaption
+							h5 Moisture - Shinny Green
+							p 360.000VNĐ
+				.col-md-4.item
+					figure
+						img(src="./img/pro-3.png", alt="")
+						figcaption
+							h5 Moisture - Bubble Gray
+							p 360.000VNĐ
+				.col-md-4.item
+					figure
+						img(src="./img/pro-4.png", alt="")
+						figcaption
+							H5 Stylish - Flower Gray
+							p 360.000VNĐ
+
+		.box2
+			.container
+				h1 TOP PIECES ON SALE
+				.owl-carousel.owl-theme
+					.row.pro-sale
+						.col-md-3.item
+							figure
+								img(src="./img/pro-sale-1.png", alt="")
+								.bar
+									img(src="./img/bar.png", alt="")
+								figcaption
+									h5 Ice cream - Sweety Brown
+									p 650.000VND
+								button Contact
+						.col-md-3.item
+							figure
+								img(src="./img/pro-sale-2.png", alt="")
+								.bar
+									img(src="./img/bar.png", alt="")
+								figcaption
+									h5 Ice cream - Sweety Gray
+									p 750.000VND
+								button Contact
+						.col-md-3.item
+							figure
+								img(src="./img/pro-sale-3.png", alt="")
+								.bar
+									img(src="./img/bar.png", alt="")
+								figcaption
+									h5 Moisture - Aria Gray
+									p 320.000VND
+								button Contact
+								
+						.col-md-3.item
+							figure
+								img(src="./img/pro-sale-4.png", alt="")
+								.bar
+									img(src="./img/bar.png", alt="")
+								figcaption
+									h5 Saigon Night - Moonlight
+									p 320.000VND
+								button Contact
+					.row.pro-sale
+						.col-md-3.item
+							figure
+								img(src="./img/pro-sale-1.png", alt="")
+								.bar
+									img(src="./img/bar.png", alt="")
+								figcaption
+									h5 Ice cream - Sweety Brown
+									p 650.000VND
+								button Contact
+						.col-md-3.item
+							figure
+								img(src="./img/pro-sale-2.png", alt="")
+								.bar
+									img(src="./img/bar.png", alt="")
+								figcaption
+									h5 Ice cream - Sweety Gray
+									p 750.000VND
+								button Contact
+						.col-md-3.item
+							figure
+								img(src="./img/pro-sale-3.png", alt="")
+								.bar
+									img(src="./img/bar.png", alt="")
+								figcaption
+									h5 Moisture - Aria Gray
+									p 320.000VND
+								button Contact
+								
+								
+						.col-md-3.item
+							figure
+								img(src="./img/pro-sale-4.png", alt="")
+								.bar
+									img(src="./img/bar.png", alt="")
+								figcaption
+									h5 Saigon Night - Moonlight
+									p 320.000VND
+								button Contact
+
+				.row
+					.col-md-12.banner3
+						img(src="./img/home-banner-3.png", alt="")
+						.box-bn3
+							h5 Grand Opening
+							p 179D CMT8, P.5, Q3. Tp.HCM
+							button view more
+		.container.box3
+			h1 BEST SELLER
+			.slider.mt-2
+				.owl-carousel.owl-theme
+					.row
+						.col-md-1
+						.col-md-6
+							img.img-fluid(src="./img/best-1.png", alt="")
+						.col-md-2(style="margin:90px")
+							figure
+								img.img-fluid(src="./img/best-2.png", alt="")
+								figcaption
+									h5 Ice cream - Sweety Gray
+									p 750.000VND
+									button(style='width: 100%;background-color: white;border: 1px solid black;padding: 1rem;') view more
+						.col-md-1
+					.row
+						.col-md-1
+						.col-md-6
+							img.img-fluid(src="./img/best-1.png", alt="")
+						.col-md-2(style="margin:90px")
+							figure
+								img.img-fluid(src="./img/best-2.png", alt="")
+								figcaption
+									h5 Ice cream - Sweety Gray
+									p 750.000VND
+									button(style='width: 100%;background-color: white;border: 1px solid black;padding: 1rem;') view more
+						.col-md-1
+		.footer
+			.container.abc
+				.row
+					.col-md-4
+						h5 NEWSLETTER
+						.menu
+							ul
+								li
+									a(href="") 156 Nguyen van thu, 1 district, hcm
+								li
+									a(href="") Hotline: 028 6273 0815
+								li
+									a(href="") 
+										span info@canhcam.vn
+					.col-md-4
+						h6 PRODUCTS
+						.row
+							.col-md-6
+								.menu
+									ul
+										li
+											a(href="") Ice Cream
+										li
+											a(href="") Hera
+										li
+											a(href="") Saigon Night
+										li
+											a(href="") Pure
+							.col-md-6
+								.menu
+									ul
+										li
+											a(href="") Moisture
+										li
+											a(href="") Stylish
+										li
+											a(href="") Natural
+
+					.col-md-4
+						input.form-control(type='text', placeholder='ENTER YOUR EMAIL..')
+						p Subscribe to receive updates, access to exclusive deals, and more.
+						.tnut
+							ul
+								li
+									a.nut(href="")
+										i.fa.fa-facebook
+								li
+									a.nut(href="")
+										i.fa.fa-instagram
+								li
+									a.nut(href="")
+										i.fa.fa-twitter
+				hr
+				.row
+					.col.end
+						p Copyright 2018 ABC. all right reserved. design by FULLSTACK VIETNAM
+
+
+
+			
+
+
+				
